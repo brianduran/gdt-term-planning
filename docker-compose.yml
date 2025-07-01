@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  plantuml-server:
+    image: plantuml/plantuml-server:jetty
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./diagrams:/workspace/diagrams
+      - ./src:/workspace/src
+    environment:
+      - PLANTUML_LIMIT_SIZE=8192
+      - JAVA_OPTS=-Djava.awt.headless=true -Dfile.encoding=UTF-8
+      - LANG=C.UTF-8
+      - LC_ALL=C.UTF-8
+    restart: unless-stopped

@@ -1,0 +1,115 @@
+@startgantt
+Project starts 2025-06-16
+
+printscale daily
+saturday are closed
+sunday are closed
+
+' === Holidays (Costa Rica) ===
+'Anexión de Guanacaste'
+2025-07-25 is closed
+'Virgen de los Ángeles'
+2025-08-02 is closed
+'Día de la Madre'
+2025-08-15 is closed
+'Cultura Afrocostarricense'
+2025-08-31 is closed
+'Día de la Independencia'
+2025-09-15 is closed
+
+' === Brian: Work from past two weeks (Sprint 0 / Historical) ===
+[Request Airflow Staging] on {Brian:100%} lasts 1 day
+[Request OS Clusters] on {Brian:100%} lasts 1 day
+[Rename repo] on {Brian:100%} lasts 1 day
+[Implement OS Index Logic] on {Brian:100%} lasts 5 days
+[Implement OS Alias Logic] on {Brian:100%} lasts 2 days
+
+' === Epic 1: OpenSearch Indexing Logic ===
+[Read Config Files] on {Brian:100%} lasts 3 days
+[Read Config Files] is colored in red
+[Output Format JSONL] on {Brian:80%} lasts 2 days
+[OpenSearch Docs] on {Brian:100%} lasts 1 day
+[GitHub Training] on {Brian:100%} lasts 2 days
+[Validate Types Transformer] on {Brian:100%} lasts 5 days
+[Migrate & Index Pilot] on {Brian:100%} lasts 3 days
+[Migrations Docs] on {Brian:100%} lasts 1 day
+[Pilot DAG] on {Brian:100%} lasts 3 days
+[Verify Count Operator] on {Brian:100%} lasts 3 days
+[API Get Record] on {Brian:100%} lasts 5 days
+[API List Records] on {Brian:100%} lasts 5 days
+
+[Request Airflow Staging] -> [Request OS Clusters]
+[Request OS Clusters] -> [Rename repo]
+[Rename repo] -> [Implement OS Index Logic]
+[Implement OS Index Logic] -> [Implement OS Alias Logic]
+[Implement OS Alias Logic] -> [Read Config Files]
+[Read Config Files] -> [Output Format JSONL]
+[Output Format JSONL] -> [OpenSearch Docs]
+[OpenSearch Docs]-> [GitHub Training]
+[GitHub Training] -> [Validate Types Transformer]
+[Validate Types Transformer] -> [Migrate & Index Pilot]
+[Migrate & Index Pilot] -> [Migrations Docs]
+[Migrations Docs] -> [Pilot DAG]
+[Pilot DAG] -> [Verify Count Operator]
+[Verify Count Operator] -> [API Get Record]
+[API Get Record] -> [API List Records]
+
+' === Epic 2: Configurable Pipelines ===
+[Config-Driven DAG Gen] on {Brian:100%} lasts 5 days
+[Push DAG to gdt-airflow] on {Brian:100%} lasts 3 days
+[GitHub Actions] on {Brian:100%} lasts 3 days
+
+[API List Records] -> [Config-Driven DAG Gen]
+[Config-Driven DAG Gen] -> [Push DAG to gdt-airflow]
+[Push DAG to gdt-airflow] -> [GitHub Actions]
+
+' === Cross-Epic Tasks ===
+[Hire Dev] starts on 2025-07-08
+[Hire Dev] on {Brian:40%} lasts 10 days
+
+
+' === Daniel: Work from past two weeks (Sprint 0 / Historical) ===
+[Auth middleware JWT] on {Daniel:100%} lasts 5 days
+[Restructure API endpoints] on {Daniel:100%} lasts 5 days
+
+' === Epic 3: Publish 16 Collections (Sequential for Daniel) ===
+[Collection TX] on {Daniel:100%} lasts 3 days
+[Collection 2] on {Daniel:100%} lasts 3 days
+[Collection 3] on {Daniel:100%} lasts 3 days
+[Collection 4] on {Daniel:100%} lasts 3 days
+[Collection 5] on {Daniel:100%} lasts 3 days
+[Collection 6] on {Daniel:100%} lasts 3 days
+[Collection 7] on {Daniel:100%} lasts 3 days
+[Collection 8] on {Daniel:100%} lasts 3 days
+[Collection 9] on {Daniel:100%} lasts 3 days
+[Collection 10] on {Daniel:100%} lasts 3 days
+[Collection 11] on {Daniel:100%} lasts 3 days
+
+[Auth middleware JWT] -> [Restructure API endpoints]
+[Restructure API endpoints] -> [Collection TX]
+[Collection TX] -> [Collection 2]
+[Collection 2] -> [Collection 3]
+[Collection 3] -> [Collection 4]
+[Collection 4] -> [Collection 5]
+[Collection 5] -> [Collection 6]
+[Collection 6] -> [Collection 7]
+[Collection 7] -> [Collection 8]
+[Collection 8] -> [Collection 9]
+[Collection 9] -> [Collection 10]
+[Collection 10] -> [Collection 11]
+
+' === OS-dependent collections (still sequential) ===
+[Collection 12 OS] on {Daniel:100%} lasts 3 days
+[Collection 13 OS] on {Daniel:100%} lasts 3 days
+[Collection 14 OS] on {Daniel:100%} lasts 3 days
+
+[API List Records] -> [Collection 12 OS]
+[Collection 12 OS] -> [Collection 13 OS]
+[Collection 13 OS] -> [Collection 14 OS]
+[Collection 11] -> [Collection 12 OS]
+
+' === Config-dependent collection ===
+[Collection 15 Config] on {Brian:100%} lasts 3 days
+[GitHub Actions] -> [Collection 15 Config]
+
+@endgantt

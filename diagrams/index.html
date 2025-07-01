@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genealogy Data Team - Gantt Charts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .diagram-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .info {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+
+        .info h3 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Genealogy Data Team - Gantt Charts</h1>
+
+        <div class="info">
+            <h3>📊 Term Estimation Gantt Chart</h3>
+            <p>This diagram shows the complete term estimation for the Genealogy Data Team project, including all phases
+                from planning to project closure.</p>
+            <p><strong>Project Duration:</strong> January 1, 2024 - May 1, 2024 (4 months)</p>
+            <p><strong>Total Tasks:</strong> 20 tasks across 5 phases</p>
+        </div>
+
+        <div class="diagram-container">
+            <h2>Term Estimation Gantt Chart</h2>
+            <img src="http://localhost:8080/plantuml/png/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000"
+                alt="Genealogy Data Team Term Estimation Gantt Chart"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div style="display: none; color: #666; font-style: italic;">
+                <p>Diagram not available. Please ensure the PlantUML server is running on localhost:8080</p>
+                <p>Run: <code>docker-compose up</code> to start the server</p>
+            </div>
+        </div>
+
+        <div class="info">
+            <h3>🔧 How to Use</h3>
+            <p><strong>To start the PlantUML server:</strong></p>
+            <code>docker-compose up</code>
+            <p><strong>To view the diagram:</strong></p>
+            <p>Open this HTML file in your browser after starting the server, or visit <a
+                    href="http://localhost:8080">http://localhost:8080</a></p>
+            <p><strong>To edit the diagram:</strong></p>
+            <p>Modify the <code>src/gdt-term-estimation.puml</code> file and refresh this page</p>
+        </div>
+    </div>
+</body>
+
+</html>
