@@ -28,11 +28,11 @@ sunday are closed
 [Read Config Files] on {Brian:100%} lasts 3 days
 [Read Config Files] is colored in red
 [Output Format JSONL] on {Brian:80%} lasts 2 days
-[OpenSearch Docs] on {Brian:100%} lasts 1 day
-[GitHub Training] on {Brian:100%} lasts 2 days
-[Validate Types Transformer] on {Brian:100%} lasts 5 days
-[Migrate & Index Pilot] on {Brian:100%} lasts 3 days
-[Migrations Docs] on {Brian:100%} lasts 1 day
+[OpenSearch Docs] on {Brian:60%} lasts 1 day
+[GitHub Training] on {Brian:60%} lasts 2 days
+[Validate Types Transformer] on {Brian:60%} lasts 5 days
+[Migrate & Index Pilot] on {Brian:60%} lasts 3 days
+[Migrations Docs] on {Brian:60%} lasts 1 day
 [Pilot DAG] on {Brian:100%} lasts 3 days
 [Verify Count Operator] on {Brian:100%} lasts 3 days
 [API Get Record] on {Brian:100%} lasts 5 days
